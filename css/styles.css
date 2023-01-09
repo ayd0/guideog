@@ -1,0 +1,122 @@
+body {
+	background: #333;
+	color: #fff;
+}
+
+.navbar {
+	background: rgba(0,0,0,0.5);
+	border-bottom: #915110 solid 1px;
+}
+
+.navbar-brand {
+	max-height: 70px;
+	max-width: 150px;
+}
+
+#home-section {
+	background: url(../imgs/home-section.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 200vh;
+}
+
+#home-section .dark-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height:200%;
+	background: rgba(0,0,0,0.4);
+	/* border-bottom: #915110 solid 1px; */
+}
+
+#home-section .home-inner {
+	padding-top: 170px;
+}
+
+.header-link {
+	color: #d1671b;
+}
+
+.header-link:hover {
+	text-decoration: none;
+	color: #f5ab5f;
+}
+
+#home-section .card-form {
+	background: rgba(0,0,0,0.8);
+	opacity: 90%;
+}
+
+#home-section .fa-border {
+	border: 3px solid #fff;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#learn-btn {
+	margin-top: 5rem;	
+}
+
+.btn-login {
+	background: #d1671b;
+	color: #fff;
+	width: 70px;
+}
+
+.btn-login:hover {
+	color: #f5ab5f;
+}
+
+.modal {
+	margin-top: 50.5px;
+	margin-left: 100px;
+}
+
+#loginModal .modal-content {
+	background: none;
+	border: none;
+	max-width: 420px;
+}
+
+#loginModal .card {
+	border-radius: 1rem;
+}
+
+#loginModal .card-body {
+	margin-top: 20px !important;
+	margin-bottom: 15px;
+}
+
+#loginModal .close {
+	outline: none;
+}
+
+#loginModal .form-control {
+	border-radius: 2rem;
+}
+
+#loginModal .login-btn {
+	border-radius: 2rem;
+	background: #fa6d16;
+	color: #fff;
+}
+
+#username-inp:focus, #password-inp:focus {
+	outline: none !important;
+	box-shadow: none;
+	border: 1px solid #ced4da;
+}
+
+.ext-site-btn {
+	padding-left: 0 !important;
+	border-radius: 2rem;
+	background: none;
+	border: 2px solid #cfcfcf;
+	box-shadow: inset 0px 0px 40px 40px #f7f7f7;
+}
+
+.ext-site-btn div {
+	padding-right: 45px;	
+}
