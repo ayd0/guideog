@@ -44,6 +44,10 @@ body {
 	color: #f5ab5f;
 }
 
+#home {
+	height: 100vh;
+}
+
 #home-section .card-form {
 	background: rgba(0,0,0,0.8);
 	opacity: 90%;
@@ -120,3 +124,4 @@ body {
 .ext-site-btn div {
 	padding-right: 45px;	
 }
+
