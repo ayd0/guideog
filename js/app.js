@@ -1,5 +1,5 @@
 const darkOverlay = document.querySelector('.dark-overlay');
-// const navHomeBtn = document.querySelector('#nav-home-btn');
+const mainNavA = document.querySelector('#main-nav a');
 
 const rate = 2.0;
 const bgColors = '0,0,0,';
@@ -12,12 +12,3 @@ document.addEventListener('scroll', () => {
 		darkOverlay.style.background = `rgba(0,0,0,${alpha})`;
 	}
 });
-
-/*
-// default behavior w.o scrollspy
-navHomeBtn.addEventListener('click', () => {
-	darkOverlay.style.background = 'rgba(0,0,0,1)';
-});
-*/
-
-
