@@ -21,7 +21,7 @@
 		<nav id="main-nav" class="navbar navbar-expand-sm navbar-dark fixed-top">
 			<div class="container">
 				<!-- <a href="index.html" class="navbar-brand mr-0">Guide<span class="text-monospace">og</span></a> -->
-				<img src="imgs/guideog-l3-alpha.png" class="navbar-brand mr-0">
+				<img src="imgs/guideog-l3-alpha.png" class="navbar-brand mr-0" href="index.html">
 				<button class="btn btn-sm btn-login text-large py-1 ml-auto d-sm-none" data-toggle="modal" data-target="#loginModal">Log In</button>
 				<button class="navbar-toggler ml-2 mr-0" data-toggle="collapse" data-target="#navbarCollapse">
 					<span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
 							<a href="#explore" class="nav-link" id="explore-btn">Explore</a>
 						</li>
 						<li class-"nav-item">
-							<a href="#FAQ" class="nav-link">FAQ</a>
+							<a href="main.html" class="nav-link">FAQ</a>
 						</li>
 						<li class-"nav-item">
 							<a href="#contact" class="nav-link">Contact</a>
@@ -138,7 +138,13 @@
 				</div>
 				
 				<!-- EXPLORE -->
-				<div id="explore"></div>
+				<div class="container" id="explore">
+					<div class="row">
+						<div class="col-4 offset-4 text-center">
+							<h1 class="display-4">Explore</h1>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -152,9 +158,7 @@
 
 		<script>
 			$('#year').text(new Date().getFullYear());
-		</script>
 
-		<script>
 			// Init Scrollspy
 			$('body').scrollspy({ target: '' })
 
