@@ -1,7 +1,7 @@
 // Init Scrollspy
 $('body').scrollspy({ target: '' });
 
-// Smooth Scrolling on Nav
+// Smooth scrolling on nav
 $("#main-nav a, #learn-btn a[href^='#']").on('click', function(event) {
 	if (this.hash !== "") {
 		event.preventDefault();
@@ -14,9 +14,14 @@ $("#main-nav a, #learn-btn a[href^='#']").on('click', function(event) {
 			window.location.hash = hash;
 		});
 	}
-})
+});
 
-// Modal set focus to username input field
+// On page load set focus to sign up email input field
+$(function() {
+	$('#signup-email').focus();	
+});
+
+// Login modal set focus to username input field
 $('#loginModal').on('shown.bs.modal', () => {
 	$('#username-inp').focus();
 });
