@@ -1,9 +1,18 @@
 body {
 	color: #fff;
+	overflow-x: hidden;
+}
+
+@media (max-width:435px) {
+	body { 
+		overflow-x: visible;
+	}
 }
 
 .navbar {
-	background: rgba(0,0,0,0.65);
+	/* background: rgba(10,29,31,0.65); */
+	background: rgba(13,20,31,.8);
+
 	border-bottom: #915110 solid 1px;
 }
 
@@ -25,13 +34,17 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	min-height:210%;
+	min-height:210vh;
 	background: rgba(0,0,0,1);
 	/* border-bottom: #915110 solid 1px; */
 }
 
 #home-section .home-inner {
 	padding-top: 170px;
+}
+
+.text-orange {
+	color: #d1671b;
 }
 
 .header-link {
@@ -48,7 +61,7 @@ body {
 }
 
 #home-section .card-form {
-	background: rgba(0,0,0,0.8);
+	background: rgba(13,20,31,0.8);
 	opacity: 90%;
 }
 
@@ -60,6 +73,16 @@ body {
 
 #learn-btn {
 	margin-top: 5rem;	
+}
+
+#learn-btn a {
+	background: rgba(13,20,31,0.8);
+}
+
+#learn-btn a:hover {
+	background: #f8f9fa;
+	color: #000;
+	opacity: 90%;
 }
 
 .btn-login {
@@ -81,6 +104,7 @@ body {
 	background: none;
 	border: none;
 	max-width: 420px;
+	min-width: 340px;
 }
 
 #loginModal .card {
@@ -126,18 +150,8 @@ body {
 
 #explore {
 	margin-top: 6rem;
-	min-width: 75vw;
-	padding: 5rem;
-	padding-top: 1rem;
-	background: rgba(0,0,0,0.7);
-	border-radius: 10px;
 }
 
-#explore .row {
-	border: 1px solid yellow;
+.explore-card {
+	max-width: 350px;
 }
-
-#explore .col-4 {
-	border: 1px solid blue;
-}
-
