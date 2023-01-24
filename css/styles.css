@@ -22,20 +22,19 @@ body {
 }
 
 #home-section {
-	background: url(../imgs/home-section.jpg);
+	background: rgb(13,20,31);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	min-height: 210vh;
 }
 
-#home-section .dark-overlay {
+#home-section .main-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	min-height:210vh;
-	background: rgba(0,0,0,1);
 	/* border-bottom: #915110 solid 1px; */
 }
 
@@ -152,6 +151,16 @@ body {
 	margin-top: 6rem;
 }
 
-.explore-card {
-	max-width: 350px;
+.explore-sub {
+	background: rgb(13,25,31);
+	border-radius: 15px;
+	/*border: 1px solid #d1671b;*/
+	position: relative;
+}
+
+.explore-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
