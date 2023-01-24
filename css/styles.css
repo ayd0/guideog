@@ -152,7 +152,7 @@ body {
 }
 
 .explore-sub {
-	background: rgb(13,25,31);
+	background: rgb(18,35,43);
 	border-radius: 15px;
 	/*border: 1px solid #d1671b;*/
 	position: relative;
@@ -163,4 +163,25 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.explore-nav .nav-link i {
+	font-size: 1.5em;
+}
+
+/* This is necessary while using scrollspy */
+.custom-active {
+	color: #fff !important;
+}
+
+.btn-stagger {
+	border: 1px solid #6c757d;
+}
+
+#main-footer {
+	background-image: linear-gradient(rgb(18,35,43), rgb(13,20,31));
+	border-top: 1px solid #0a151a;
+	padding: 50px;
 }

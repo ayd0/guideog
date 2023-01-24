@@ -16,10 +16,12 @@ $("#main-nav a, #learn-btn a[href^='#']").on('click', function(event) {
 	}
 });
 
+/*
 // On page load set focus to sign up email input field
 $(function() {
 	$('#signup-email').focus();	
 });
+*/
 
 // Login modal set focus to username input field
 $('#loginModal').on('shown.bs.modal', () => {
