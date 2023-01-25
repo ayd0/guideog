@@ -15,25 +15,7 @@ let categoryNames = [
 		'c/ Travel',
 		'c/ Home Decorating',
 		'c/ Game Design'
-	],
-	[
-		'c/ Some Category',
-		'c/ Some Category',
-		'c/ Some Category',
-		'c/ Some Category',
-		'c/ Some Category',
-		'c/ Some Category',
-		'c/ Some Category'
-	],
-	[
-		'c/ Some Other Category',
-		'c/ Some Other Category',
-		'c/ Some Other Category',
-		'c/ Some Other Category',
-		'c/ Some Other Category',
-		'c/ Some Other Category',
-		'c/ Some Other Category'
-	]
+	],[],[]
 ];
 
 let guideNames = [
@@ -45,26 +27,15 @@ let guideNames = [
 		'g/ Must See Spots in Seoul',
 		'g/ Making your Home Offfice a Vivarium',
 		'g/ Unity for Winners'
-	],
-	[
-		'c/ Some Guide',
-		'c/ Some Guide',
-		'c/ Some Guide',
-		'c/ Some Guide',
-		'c/ Some Guide',
-		'c/ Some Guide',
-		'c/ Some Guide'
-	],
-	[
-		'c/ Some Other Guide',
-		'c/ Some Other Guide',
-		'c/ Some Other Guide',
-		'c/ Some Other Guide',
-		'c/ Some Other Guide',
-		'c/ Some Other Guide',
-		'c/ Some Other Guide'
-	]
+	],[],[]
 ];
+
+for (let i = 0; i < 7; ++i) {
+	categoryNames[1].push('c/ Some Category');
+	categoryNames[2].push('c/ Some Other Category');
+	guideNames[1].push('g/ Some Guide');
+	guideNames[2].push('g/ Some Other Guide')
+}
 
 // Set initial background color/opacity
 mainOverlay.style.background = `rgb(18,35,43)`;
