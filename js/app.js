@@ -6,6 +6,8 @@ const guideAnchors = document.querySelectorAll('#guides-sub a');
 
 const rate = 2.0;
 
+// name arrays will eventually be replaced by get functions to real 
+// categories/guides based on usage statistics
 let categoryNames = [
 	[
 		'c/ Programming',
@@ -30,7 +32,7 @@ let guideNames = [
 	],[],[]
 ];
 
-for (let i = 0; i < 7; ++i) {
+for (let i = 0; i < categoryNames[0].length; ++i) {
 	categoryNames[1].push('c/ Some Category');
 	categoryNames[2].push('c/ Some Other Category');
 	guideNames[1].push('g/ Some Guide');
@@ -38,9 +40,7 @@ for (let i = 0; i < 7; ++i) {
 }
 
 // Set initial background color/opacity
-mainOverlay.style.background = `rgb(18,35,43)`;
-// 13, 25, 31 -- original color
-// 25, 47, 59
+mainOverlay.style.background = `rgb(18,35,43)`; // 13, 25, 31 -- original color
 
 // Change background opacity on scroll
 document.addEventListener('scroll', () => {
@@ -57,8 +57,7 @@ let exploreBtnClickHandler = function(button, buttonGroup, buttonAnchors, anchor
 	}
 	button.classList.add('custom-active');
 	
-	let arr = Array.prototype.slice.call(buttonGroup);
-	let i = arr.indexOf(button);
+	let i = Array.prototype.slice.call(buttonGroup).indexOf(button);
 	let j = 0;
 
 	for (anchor of buttonAnchors) {
